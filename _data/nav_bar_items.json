@@ -6,5 +6,9 @@
     {
         "name": "About",
         "path": "/About/"
+    },
+    {
+        "name": "Posts",
+        "path": "/Posts/"
     }
 ]
