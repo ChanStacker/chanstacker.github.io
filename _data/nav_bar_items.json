@@ -5,10 +5,10 @@
     },
     {
         "name": "About",
-        "path": "/About/"
+        "path": "/about/"
     },
     {
         "name": "Posts",
-        "path": "/Posts/"
+        "path": "/posts/"
     }
 ]
