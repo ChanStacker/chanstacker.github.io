@@ -2,7 +2,7 @@
 layout: default
 title:  "Floating point"
 date:   2020-11-25 12:00:00 +0100
-categories: techarticle
+categories: .Net
 ---
 
 A floating point is represented within a fixed number of bytes.

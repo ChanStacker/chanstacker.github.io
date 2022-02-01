@@ -2,7 +2,7 @@
 layout: default
 title:  "Kafka Offset"
 date:   2022-01-24 14:15:00 +0100
-categories: techarticle
+categories: Kafka
 ---
 
 On this page we wil talk about kafka Offset.

@@ -2,7 +2,7 @@
 layout: default
 title:  "Creating continuous dependent jobs control-m"
 date:   2022-01-26 07:00:00 +0100
-categories: techarticle
+categories: Kafka
 ---
 
 The idea is to create a job JOB_A that runs on a recurrent schedule and on successful run, will kick off another job JOB_B.
