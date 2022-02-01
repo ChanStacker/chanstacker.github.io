@@ -1,0 +1,14 @@
+---
+layout: default
+title:  "DBContext and unit tests"
+date:   2022-01-31 09:00:00 +0100
+categories: EFCore5
+---
+
+1) The DBContext is a short lived instance, desgined for a single unit of work, after which the entity framework provider takes care of disposing.
+2) When creating a dbcontext at application level, simply derive from DbContext and have public constructor that takes a DbContextOptions.  (DbContextOptions options)
+3) EF provides 2 ways to sync the db context to the database
+    1) From code to databse => use Migration
+    2) From database to code => use Reverse Engineering - eg Scaffold from DBContext
+4) Install Microsoft.EntityFrameworkCore.SqlServer from Nuget into the target project ie the project that will host your db context and other db elements.
+5) Install Microsoft.EntityFrameworkCore.Tools as an alternative to installing dotnet ef globally.
