@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Kafka Offset"
 date:   2022-01-24 14:15:00 +0100
 categories: Kafka

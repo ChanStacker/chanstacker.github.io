@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Kafka Intro"
 date:   2022-01-21 12:00:00 +0100
 categories: Kafka

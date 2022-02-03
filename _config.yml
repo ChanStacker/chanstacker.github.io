@@ -20,7 +20,9 @@
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-
+description: >
+  Software developer with a fair few years of experience building financial applications for the investment banking and hedge fund business.
+  Though .NET/C# has been my main focus, I do get captivated by Angular, python, Sql, linux...
 
 # Build settings
 plugins:

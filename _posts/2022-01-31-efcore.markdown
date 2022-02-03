@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "DBContext and unit tests"
 date:   2022-01-31 09:00:00 +0100
 categories: EFCore5
@@ -12,3 +12,8 @@ categories: EFCore5
     2) From database to code => use Reverse Engineering - eg Scaffold from DBContext
 4) Install Microsoft.EntityFrameworkCore.SqlServer from Nuget into the target project ie the project that will host your db context and other db elements.
 5) Install Microsoft.EntityFrameworkCore.Tools as an alternative to installing dotnet ef globally.
+6) Local connection string options.UseSqlServer("Data Source=.;Initial Catalog=EfTest;Integrated Security=True;");
+7) Running the dotnet ef cli without installing Microsoft.EntityFrameworkCore.Tools resulted in the following exception:
+Your startup project 'WebAppEfCore' doesn't reference Microsoft.EntityFrameworkCore.Design. This package is required for the Entity Framework Core Tools to work. Ensure your startup project is correct, install the package, and try again.
+8) Trying a ASP.NET Web Application without a DbContext
+No DbContext was found in assembly 'WebAppEfCore'. Ensure that you're using the correct assembly and that the type is neither abstract nor generic.

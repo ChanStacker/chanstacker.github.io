@@ -1,6 +1,6 @@
 ---
-layout: default
-title:  "DBContext and unit tests"
+layout: post
+title:  "FIFO Accounting"
 date:   2022-01-31 09:00:00 +0100
 categories: FIFO Accounting
 ---

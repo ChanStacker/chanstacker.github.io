@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Creating continuous dependent jobs control-m"
 date:   2022-01-26 07:00:00 +0100
 categories: Kafka
