@@ -7,6 +7,12 @@ categories: Kafka
 
 On this page we will talk about kafka Offset.
 
+* Offset is a struct and has the same size as a long, with a method to determine whether it is a special one.
+* IsSpecial returns true for 4 scenarios
+1. Beginning offset -2 - when a new topic is created, the value of the offset is set to -2
+2. End offset -1 the end of partition record (seee further below) gets a value of -1
+3. Stored offset -1000
+4. Invalid offset -1001 
 * QueryWatermarkOffsets - Returns a WatermarkOffset which has 2 properties high and low.
 * low - the lowest offset available on the offset
 * high - this is the End of Partition event on that partition and not the highest offset of a message.
