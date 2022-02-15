@@ -32,6 +32,12 @@ plugins:
 sass:
   sass_dir: assets/css
 
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+
 defaults:
   - scope:
       path: "assets/img"
