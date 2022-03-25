@@ -5,7 +5,7 @@ date:   2022-03-04 09:00:00 +0100
 categories: linux
 ---
 
-* Even though username/password (basic auth) can be used tp remote only a linux box, the preferred way to remote is `SSH`. 
+* Even though username/password (basic auth) can be used to remote on a linux box, the preferred way to remote is `SSH`. 
 * The commands typed on a local shell session are route through a secure tunnel to the remote machine for execution.
 
 ## SSH authentication process

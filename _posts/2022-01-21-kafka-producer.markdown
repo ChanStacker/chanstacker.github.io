@@ -5,9 +5,9 @@ date:   2022-01-21 12:00:00 +0100
 categories: Kafka
 ---
 
-On this page we wil talk about kafka producer.
+Creating a kafka producer can be as simple as the code below:
 
-{% highlight csharp %}
+{% highlight csharp linenos %}
 static void Produce(string topic, ClientConfig config)
 {
     using (var producer = new ProducerBuilder<string, string>(config).Build())
