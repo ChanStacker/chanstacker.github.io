@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Log4Net"
+date:   2022-03-26 09:00:00 +0100
+categories: log4net
+---
+
+* Ever since I started with building .Net applications, Log4Net has my logging framework of choice.
+* The different ways to config it whether it is a config section in the application config or a dedicated log4net.config file, it does offer a decent level of settings and flexibility.
+* I cannot say as much about the conversion pattern options.  Caller information parameters do not seeem to work consistently.
+* %class - which adds the fully qualified class name to the log message - works correctly in a .Net 5 application but not in a .Net framework 4.7.2 application. 
+
