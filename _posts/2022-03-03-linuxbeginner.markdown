@@ -21,4 +21,4 @@ In linux, everything is shown as a file even hardwares
 * `ls -a` List all the files in a directory (including hidden files)
 * `pwd` 	Show the present working directory
 * `cd` 	Change directory to some other location
-* `file` 	View the type of any file
+* `file` 	View the type of any filem                      
