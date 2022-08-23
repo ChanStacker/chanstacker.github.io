@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Bootstrap5"
+date:   2022-08-23 12:00:00 +0100
+categories: Frontend
+---
+
+* Bootstrap 5 comes with 6 tier of screen sizes: xs, sm, md, lg, xl, xxl
+* It is the first version of bootstrap without Jquery, instead using vanilla JS.
+* Bootstrap icons have been reintroduced since version 5 and these need to be referenced separately in order to be used.  The CDN is on the bootstrap site.
+* Introduction of the Offcanvas which is a side panel component that can be toggled with javascript.
