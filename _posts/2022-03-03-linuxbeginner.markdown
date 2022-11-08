@@ -19,6 +19,10 @@ In linux, everything is shown as a file even hardwares
 * `ls`    List all the files in a directory
 * `ls -l` List all files and their details (owner, mtime, size, etc)
 * `ls -a` List all the files in a directory (including hidden files)
+* `ls -ltra` List all the files sort by last modified time with most recently modified on top (including hidden files)
 * `pwd` 	Show the present working directory
-* `cd` 	Change directory to some other location
-* `file` 	View the type of any filem                      
+* `cd` 	    Change directory to some other location
+* `file` 	View the type of any file
+* `systemctl` Utility responsible for examining and analysing the systemd service manager
+* `pstree` Displays the process tree
+* `top` Displays info about the system and processes included memory. Switches: z, x, <, >, 1
