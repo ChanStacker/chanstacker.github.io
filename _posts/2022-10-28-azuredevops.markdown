@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Working with Azure Devops"
-date: 2022-10-27 09:00:00 +0100
+date: 2022-10-28 09:00:00 +0100
 categories: Azure
 ---
 
