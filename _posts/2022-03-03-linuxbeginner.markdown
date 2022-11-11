@@ -8,7 +8,6 @@ categories: linux
 * Kernel is the first software loaded when the computer boots – loaded by the bootloader. 
 * Linux is a kernel – kernel is what interact software with hardware. 
 * Kernel uses the device drivers to interact with the hardware. 
- 
 * GNU + Linux = a distro.  Ubuntu, Fedora and Mint are distros 
 
 In linux, everything is shown as a file even hardwares 
@@ -26,3 +25,13 @@ In linux, everything is shown as a file even hardwares
 * `systemctl` Utility responsible for examining and analysing the systemd service manager
 * `pstree` Displays the process tree
 * `top` Displays info about the system and processes included memory. Switches: z, x, <, >, 1
+
+## GUI
+* GNOME and KDE are popular Graphical interfaces for linux
+* Graphical desktops can be started and stopped depending on distribution
+`sudo system stop gdm`
+`sudo system start gdm`
+
+`$ sudo shutdown -h 01:00 "Message to the users"` - this is to schedule a shutdown of the system with a message sent to the users.  `shutdown` is the command to also reboot the system when passing the switch `-r`
+
+`which <applicationname>` and `whereis <applicationname>`  - to locate the source of an application and to find the man files respectively.
