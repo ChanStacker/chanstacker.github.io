@@ -1,0 +1,18 @@
+---
+layout: post
+title: "C# 10 features"
+date: 2022-11-15 09:00:00 +0100
+categories: .Net
+---
+
+* To reduce on boilerplate code, Microsoft has introduced Global using directives
+* When specified as Global, a directive becomes available to the whole project.
+* Best practice would be to create a dedicated class `GlobalUsings.cs` and specify the directives as below.  It also works with static and aliases:
+
+{% highlight csharp linenos %}
+global using Mycustom.namespace;
+global using static Mystatic.namespace;
+global using Mine = MyOther.namespace;
+{% endhighlight %}
+
+* There are also project level properties called `ImplicitUsings`
