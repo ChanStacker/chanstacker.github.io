@@ -15,4 +15,29 @@ global using static Mystatic.namespace;
 global using Mine = MyOther.namespace;
 {% endhighlight %}
 
-* There are also project level properties called `ImplicitUsings`
+* Global directives can also be defined in the project file, a feature called `Implicit Usings` and enabled with flag: 
+{% highlight xml linenos %}
+<ImplicitUsings>enable</ImplicitUsings>  
+{% endhighlight %}
+
+* With `Implicit Usings`, a global using file get generated in the obj folder, ending with ".GlobalUsings.g.cs"
+* Depending on the project type, the compiler will add a set of global directives to the generated global usings eg for a console application:
+
+{% highlight csharp linenos %}
+System
+System.Collections.Generic
+System.IO
+System.Linq
+System.Net.Http
+System.Threading
+System.Threading.Tasks
+{% endhighlight %}
+
+
+* There is also the flexibility of adding or removing from the default list:
+{% highlight xml linenos %}
+<ItemGroup>
+  <Using Remove="System.Threading" />
+  <Using Include="Microsoft.Extensions.Logging" />
+</ItemGroup>
+{% endhighlight %}
