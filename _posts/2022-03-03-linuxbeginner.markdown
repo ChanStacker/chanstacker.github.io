@@ -19,6 +19,7 @@ In linux, everything is shown as a file even hardwares
 * `ls -l` List all files and their details (owner, mtime, size, etc)
 * `ls -a` List all the files in a directory (including hidden files)
 * `ls -ltra` List all the files sort by last modified time with most recently modified on top (including hidden files)
+* `tree -d n` Display a tree of directories
 * `pwd` 	Show the present working directory
 * `cd` 	    Change directory to some other location
 * `file` 	View the type of any file
@@ -35,3 +36,12 @@ In linux, everything is shown as a file even hardwares
 `$ sudo shutdown -h 01:00 "Message to the users"` - this is to schedule a shutdown of the system with a message sent to the users.  `shutdown` is the command to also reboot the system when passing the switch `-r`
 
 `which <applicationname>` and `whereis <applicationname>`  - to locate the source of an application and to find the man files respectively.
+
+## File Utilities
+* `wc` word count, gives also the number of lines
+* `cat` displays the content of a file, with -n to display the line number
+* `less` displays a file in a paginate way, -N for line number
+* `head` with switch -<n>, shows first n lines of a file
+* `tail` with switch -<n>, shows last n lines of a file
+
+  
