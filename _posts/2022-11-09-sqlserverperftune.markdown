@@ -2,7 +2,7 @@
 layout: post
 title: "SQL Server Performance Tuning"
 date: 2022-11-09 09:00:00 +0100
-categories: Azure
+categories: SqlServer
 ---
 
 * There are 2 ways by which the query engine retrieves data: Table scan or Index
