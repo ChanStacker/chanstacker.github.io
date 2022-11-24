@@ -43,5 +43,11 @@ In linux, everything is shown as a file even hardwares
 * `less` displays a file in a paginate way, -N for line number
 * `head` with switch -<n>, shows first n lines of a file
 * `tail` with switch -<n>, shows last n lines of a file
+* `touch` creates a file but mostly used to modify times on files `touch -t 24112022 testfile`
+
+## Directory
+* `mkdir` create a directory
+* `rmdir` remove an empty directory
+* `rm -rf` remove a directory and all its content
 
   
