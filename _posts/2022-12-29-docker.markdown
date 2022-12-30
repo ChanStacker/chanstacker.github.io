@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Kubernetes on Windows Home"
+date: 2022-12-29 09:00:00 +0100
+categories: Devops
+---
+
+* In this article, we'll explore the development and testing of a dockerised .Net 7 app on Windows 11 HOME
+
+#### Installing Kubernetes
+
+* The docker engine will be run in WSL2, which can be activated in Windows Features by checking `Windows Subsystem for Linux`
+* Once installed, check that WSL2 is running by typing WSL -l -v in a cmd console, which will list subsystem instances currently running
+* Alternatively, type WSL which brings up a bash shell
+* Then install `Docker Desktop` and activate Kubernetes in the settings once `Docker Desktop` is up.  This will spin up K8s in the docker engine running on WSL2, a technology referred to as KinD
+* From here on:
+    1. Running `WSL -l -v` in a cmd console should show `Docker Desktop` in a running state
+    2. Running `docker container ls --all` should show bring up a list of containers running K8s components
+    3. Running `kubectl get services --all-namespaces` should at this stage show the default K8s services launched by KinD
+    4. Running `kubectl get pods --all-namespaces` should at this stage show the K8s containers launched by KinD
+
+#### Creating a .Net 7 Minimal API
+
+* In Visual Studio, 2022 as of now, create a ASP.NET application using the `ASP.NET Core empty` template
+* Select framework .NET 7 and use the top level statements - there is a checkbox to uncheck
+![minimal-api](/assets/img/MinimalAspNet7.png){:class="img-centered"}
