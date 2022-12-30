@@ -15,12 +15,12 @@ categories: Devops
 * Then install `Docker Desktop` and activate Kubernetes in the settings once `Docker Desktop` is up.  This will spin up K8s in the docker engine running on WSL2, a technology referred to as KinD
 * From here on:
     1. Running `WSL -l -v` in a cmd console should show `Docker Desktop` in a running state
-    2. Running `docker container ls --all` should show bring up a list of containers running K8s components
-    3. Running `kubectl get services --all-namespaces` should at this stage show the default K8s services launched by KinD
-    4. Running `kubectl get pods --all-namespaces` should at this stage show the K8s containers launched by KinD
+    2. Running `docker container ls --all` brings up a list of containers running K8s components
+    3. Running `kubectl get services --all-namespaces` at this stage shows the default K8s services launched by KinD
+    4. Running `kubectl get pods --all-namespaces` at this stage displays the K8s pods launched by KinD.  Any custom containers will also be displayed using this command, once we have the custom minimal api running in the following steps.
 
 #### Creating a .Net 7 Minimal API
 
-* In Visual Studio, 2022 as of now, create a ASP.NET application using the `ASP.NET Core empty` template
+* In Visual Studio, 2022 as of now, create an ASP.NET application using the `ASP.NET Core empty` template
 * Select framework .NET 7 and use the top level statements - there is a checkbox to uncheck
 ![minimal-api](/assets/img/MinimalAspNet7.png){:class="img-centered"}
