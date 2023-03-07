@@ -10,3 +10,5 @@ categories: kubernetes
 * Setting `Google Cloud` was relatively 
 * A link will be provided in the course for scripts that help set up the Control Plane and the Worker nodes
 * When using `wget` to download the scripts, ensure that the underscores are copied over in the link. syntax of wget command is: `wget <URL> --user=<username> --password=<password>`
+* There is a script to set up the Control Plane node and another one to set up the Worker node.
+* Once the Control Plane and the Worker nodes are set up, it is time for the worker node to join the Control Plane, command is of syntax: `kubeadm join <ControlPlaneNodeIp>:6443 --token <token> --discovery-token-ca-cert-hash <ControlPlaneNodeCertHash>`
