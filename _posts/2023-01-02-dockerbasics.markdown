@@ -25,3 +25,5 @@ FROM buildtools AS build
 FROM BaseImage AS basestep
 COPY --from=build /app
 {% endhighlight %}
+
+* Docker build with target switch - basically in a multistage build process, the `--target` switch allows to select the stage at which the image will be retrieved.  All other stages beyond the target stage get ignored.  This is popularly used in CI pipelines whereby the Dockerfile will have a stage for running unit tests but the a stage determining the build status will only run as far as building the solution.
